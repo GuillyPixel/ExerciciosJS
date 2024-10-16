@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TWO Diferente</title>
+</head>
+
+    <style>
+
+    body{
+        background-color: white;
+        color: black;
+        text-align: center;
+        font-size: 15px;}
+
+    .image{
+        width: 500px;
+        height: 380px;
+        margin: auto;
+    }
+    </style>
+
+
+
+
+<body class="fundo">
+    <h1>"Tá vendo aquela lua, que brilha lá no ceu"</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam vero illum, aspernatur eaque beatae ullam excepturi blanditiis vitae quibusdam neque perspiciatis explicabo ut amet, doloribus veniam repellendus ea dolorem! Laborum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quaerat ipsum dolore numquam omnis alias libero accusantium doloremque dolorem. Praesentium repellat recusandae hic velit quaerat! Nulla ipsum necessitatibus quas exercitationem.</p>
+    
+    <input type="button" id="modoescuro" value="modo escuro" onclick="modoescuro()" />
+    <input type="button" id="mododaltonico" value="modo daltonico" onclick="mododaltonico()" />
+    <input type="button" id="modonormal" value="modo normal" onclick="modonormal()" />
+    <input type="button" id="modoal" value="A+" onclick="modoal()" />
+
+    <hr/>
+
+    <img src="IMG/fundo 1.jpg" class="image">
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque quam odit eius cumque impedit excepturi, dolores eligendi recusandae ab voluptates necessitatibus deleniti. Repudiandae ipsum, facilis voluptates aperiam doloribus quaerat. Aperiam!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse omnis vel rem totam doloribus, dicta fugit excepturi harum perferendis nihil deleniti illum voluptate vero mollitia, sunt eveniet expedita molestias dolorem!Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, aperiam quia aut, perspiciatis sed, ullam suscipit sit tempore doloremque rerum harum? Animi atque dolor commodi, veritatis omnis corporis repellat nam.</p>
+
+
+    <script>
+
+        function modoescuro(){
+             document.querySelector(".fundo").style.backgroundColor="black";
+            document.querySelector(".fundo").style.color="gray";
+            document.querySelector(".fundo").style.fontSize="15px";
+            document.querySelector(".myimage").src="IMG/fundo 1.jpg";}
+
+        function mododaltonico(){
+             document.querySelector(".fundo").style.backgroundColor="pink";
+            document.querySelector(".fundo").style.color="green";
+            document.querySelector(".fundo").style.fontSize="15px";
+            document.querySelector(".myimage").src="IMG/fundo 1.jpg";}
+
+        function modonormal(){
+             document.querySelector(".fundo").style.backgroundColor="white";
+            document.querySelector(".fundo").style.color="black";
+            document.querySelector(".fundo").style.fontSize="15px";
+            document.querySelector(".myimage").src="IMG/fundo 1.jpg";}
+
+        function modoal(){
+             document.querySelector(".fundo").style.backgroundColor="white";
+            document.querySelector(".fundo").style.color="black";
+            document.querySelector(".fundo").style.fontSize="30px";
+            document.querySelector(".myimage").src="IMG/fundo 1.jpg";}
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
