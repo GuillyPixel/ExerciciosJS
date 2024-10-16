@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando media aritmetica</title>
+</head>
+<body>
+    <h1>Testando media aritmetica</h1>
+
+    <script>
+        var numero1 = parseFloat (prompt ("Entre com a primeira NOTA"))
+        var numero2 = parseFloat (prompt ("Entre com a segunda NOTA"))
+        var numero3 = parseFloat (prompt ("Entre com o terceira NOTA"))
+        var numero4 = parseFloat (prompt ("Entre com o quarta NOTA"))
+
+        let divisao = (numero1+numero2+numero3+numero4) /4
+
+        document.write(" A média da sua nota é:" +divisao)
+
+        //arrendodar a media
+        document.write(" <br> A média da sua nota é:" + Math.round (divisao))
+
+        //definição das casas decimais
+        document.write(" <br> A média da sua nota é:" +divisao.toFixed(2))
+
+        if (divisao >=6){
+            document.write ("<br> <h1> PARABÉNS! VOCÊ FOI APROVADO.</h1>")}
+
+        else if (divisao >=5){
+            document.write ("<br> <h1> VISH! VOCÊ ESTÁ DE RECUPERAÇÃO.</h1>")}
+
+
+        else {document.write("<br> <h1> QUE PENA! VOCÊ FOI REPROVADO.</h1>")}
+
+    </script>
+</body>
+</html>
