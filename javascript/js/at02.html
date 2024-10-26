@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ver se o numero é divisivel por 10, por 5, por 2 ou por nada</title>
+</head>
+<body>
+<!--fiz com ajuda-->
+    <p id="resultado"></p>
+
+<script>
+    let numero = parseInt(prompt("Digite um numero:"));
+    let resultado = "";
+
+    if (numero % 10=== 0) {
+        resultado = "O numero é divisivel por 10.";} 
+        
+    else if (numero %5 ===0) {
+        resultado = "O numero é divisivel por 5.";}
+        
+    else if (numero % 2 ===0) {
+        resultado = "O numero é divisivel por 2.";} 
+        
+    else {
+        resultado = "O numero não é divisivel por 10, 5 ou 2.";}
+
+        document.getElementById("resultado").innerHTML = resultado;
+</script>
+    
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calorias (Refeição)</title>
+</head>
+<body>
+
+<style>
+    body{
+        text-align: center;
+        border: 10px solid black;}
+
+    body h1{
+        color: red;
+        font-size: 50px;}
+
+    body form{
+        border: solid red 5px;
+        width: 30%;
+        position: relative;
+        margin: auto;
+        padding: 20px;}
+
+    #totalCalorias{
+        color: red;}
+
+    body button{
+        margin-top: 30px;
+        font-size: 25px;
+        background-color: red;
+        border-color: black;
+        color: white;
+        transition: 0.7s;}
+
+    body button:hover{
+        background-color: white;
+        color: red;}
+
+    #sobremesa{
+        margin: 10px;
+    }
+
+</style>
+</head>
+<body>
+    <h1>Calculador de Calorias</h1>
+    <form id="calorieForm">
+        <label for="prato">Escolha o prato:</label>
+        <select id="prato">
+            <option value="0">Selecione</option>
+            <option value="180">Vegetariano</option>
+            <option value="230">Peixe</option>
+            <option value="250">Frango</option>
+            <option value="350">Carne</option>
+        </select><br>
+        
+        <label for="sobremesa">Escolha a sobremesa:</label>
+        <select id="sobremesa">
+            <option value="0">Selecione</option>
+            <option value="75">Abacaxi</option>
+            <option value="110">Sorvete diet</option>
+            <option value="170">Mouse diet</option>
+            <option value="200">Mouse chocolate</option>
+        </select><br>
+        
+        <label for="bebida">Escolha a bebida:</label>
+        <select id="bebida">
+            <option value="0">Selecione:</option>
+            <option value="20">Chá</option>
+            <option value="70">Suco de laranja</option>
+            <option value="100">Suco de melão</option>
+            <option value="65">Refrigerante diet</option>
+        </select><br>
+        
+        <button type="button" onclick="calcularCalorias()">Calcular Calorias</button>
+    </form>
+
+    <h2>Total de Calorias: <span id="totalCalorias">0</span> cal</h2>
+
+    <script>
+        function calcularCalorias() {
+            var prato = parseInt(document.getElementById('prato').value);
+            var sobremesa = parseInt(document.getElementById('sobremesa').value);
+            var bebida = parseInt(document.getElementById('bebida').value);
+
+            var totalCalorias = prato + sobremesa + bebida;
+
+            document.getElementById('totalCalorias').innerText = totalCalorias;
+        }
+    </script>
+    
+</body>
+
+</html>
